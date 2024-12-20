@@ -5,14 +5,13 @@ export async function generateStaticParams() {
 }
 
 export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
-  return (
-    <>
-      {children}
-    </>
-  );
-} 
+    children,
+  }: {
+    children: React.ReactNode;
+  }) {
+    return (
+      <>
+        {children}
+      </>
+    );
+  }
