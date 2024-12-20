@@ -6,7 +6,6 @@ export async function generateStaticParams() {
 
 export default function Layout({
   children,
-  params
 }: {
   children: React.ReactNode;
   params: { lang: string };
