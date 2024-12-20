@@ -1,0 +1,10 @@
+{
+  "welcome": {
+    "title": "Welcome to Happy2Assist",
+    "subtitle": "A platform helping entrepreneurs with AI solutions",
+    "joinWaitlist": "Join the Waitlist",
+    "emailPlaceholder": "Enter your email",
+    "success": "Thank you! You're on the list.",
+    "error": "Oops! Something went wrong."
+  }
+} 

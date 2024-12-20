@@ -1,0 +1,10 @@
+{
+  "welcome": {
+    "title": "Welkom bij Happy2Assist",
+    "subtitle": "Een platform dat ondernemers helpt met AI-oplossingen",
+    "joinWaitlist": "Schrijf je in",
+    "emailPlaceholder": "Vul je e-mailadres in",
+    "success": "Bedankt! Je staat op de lijst.",
+    "error": "Oeps! Er ging iets mis."
+  }
+} 
