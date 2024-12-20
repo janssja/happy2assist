@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Happy2Assist Frontend
 
-## Getting Started
+Een Next.js applicatie die ondernemers helpt met AI-oplossingen.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
+- Meertalige ondersteuning (NL/EN)
+- Responsive design
+- Moderne UI met animaties
+- Waitlist formulier
+- Dark mode support
+
+## 🛠 Technische Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Animaties:** Framer Motion
+- **Taal:** TypeScript
+- **State Management:** React Hooks
+- **API:** REST API met Django backend
+
+## 📋 Vereisten
+
+- Node.js 18.17 of hoger
+- npm of yarn
+- Een actieve backend server (zie backend repository)
+
+## 🔧 Installatie
+
+1. Clone de repository:
+bash
+git clone https://github.com/jouw-username/happy2assist-frontend.git
+cd happy2assist-frontend
+
+
+2. Installeer dependencies:
+
+bash
+npm install
+of
+yarn install
+
+
+3. Maak de benodigde .env bestanden aan:
+
+`.env.local` voor development:
+bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_API_WAITLIST=/api/waitlist
+
+.env.production` voor productie:
+
+4. Start de development server:
+bash
 npm run dev
-# or
+of
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structuur
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+frontend/
+├── app/ # Next.js app directory
+│ ├── [lang]/ # Taal-specifieke routes
+│ └── layout.tsx # Root layout
+├── components/ # React componenten
+├── lib/ # Utilities en helpers
+├── public/ # Statische bestanden
+│ └── images/ # Afbeeldingen
+└── dictionaries/ # Taal bestanden
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Meertaligheid
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+De applicatie ondersteunt meerdere talen via de `[lang]` directory. Taalbestanden zijn te vinden in de `dictionaries` map:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `nl.json` - Nederlands
+- `en.json` - Engels
 
-## Deploy on Vercel
+## 🔒 Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+De applicatie gebruikt verschillende environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `NEXT_PUBLIC_BASE_URL`: De basis URL van de frontend
+- `NEXT_PUBLIC_API_URL`: De basis URL van de backend API
+- `NEXT_PUBLIC_API_WAITLIST`: Het endpoint voor de waitlist
+
+## 📱 Responsive Design
+
+De applicatie is volledig responsive en geoptimaliseerd voor:
+- Desktop (1024px en groter)
+- Tablet (768px - 1023px)
+- Mobiel (tot 767px)
+
+## 🚀 Deployment
+
+1. Bouw de applicatie:
+bash
+npm run build
+# of
+yarn build
+
+2. Start de productie server:
+bash
+npm run start
+# of
+yarn start
+
+
+## 🤝 Contributing
+
+1. Fork de repository
+2. Maak een feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit je changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push naar de branch (`git push origin feature/AmazingFeature`)
+5. Open een Pull Request
+
+
+## 📝 License
+
+Dit project is gelicenseerd onder de MIT License.
+
+
+## 👥 Team
+
+- Jackie - Lead Developer
+
+## 📧 Contact
+
+Voor vragen of ondersteuning, neem contact op via:
+- Email: jackie@happy2change.be
+- Website: [https://happy2assist.com]
+
