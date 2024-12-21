@@ -59,6 +59,7 @@ MIDDLEWARE = [
 # CORS instellingen
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js development server
+    "https://happy2assist.vercel.app",
 ]
 
 # REST Framework instellingen
