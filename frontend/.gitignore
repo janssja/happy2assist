@@ -25,3 +25,7 @@ yarn-error.log*
 .idea
 *.swp
 .DS_Store
+
+# Environment variables
+.env
+*.sqlite3
