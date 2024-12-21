@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export async function POST(request: Request) {
   try {
     const { email, language } = await request.json();
 
-    const response = await fetch('http://localhost:8000/api/waitlist/', {
+    const response = await fetch(`${apiUrl}/api/waitlist/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
